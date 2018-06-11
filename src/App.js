@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import $ from 'jquery';
-import Projects from './Components/Projects';
-import Todos from './Components/Todos';
-import Posts from './Components/Posts';
-import PostForm from './Components/PostForm';
-import AddProject from './Components/AddProject';
+import Projects from './projects/components/Projects';
+import Todos from './todos/components/Todos';
+import Posts from './posts/components/Posts';
+import PostForm from './posts/components/PostForm';
+import AddProject from './projects/components/AddProject';
 import uuid from 'uuid';
 import { Provider } from 'react-redux';
-import store from './store'
+import store from './shared/store/store';
+
 class App extends Component {
   constructor() {
     super();
